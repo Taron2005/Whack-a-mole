@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	transition: 0.7s all;
+	outline: none;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.board {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-image: url("./triangles-g598dd2fbf_1280.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+p {
+	font-size: 2rem;
+	color: white;
+	font-weight: 900;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.board .row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+.board .row .box {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8rem;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.274);
+}
+.board button {
+	padding: 1rem 7rem;
+	background-color: rgba(0, 0, 0, 0.493);
+	border: 1px solid gray;
+	font-size: 2rem;
+	color: white;
+}
+@media screen and (max-width: 400px) {
+	.board .row .box {
+		width: 80px;
+		height: 80px;
+	}
+	.board button {
+		padding: 1rem 1rem;
+	}
+}
